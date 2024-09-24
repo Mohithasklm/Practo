@@ -1,0 +1,8 @@
+
+<suite name="Practo_suite">
+  <test name="Practo_test">
+     <classes>
+         <class name="Practo.PractoTestng"/>           
+     </classes>
+  </test>
+</suite>

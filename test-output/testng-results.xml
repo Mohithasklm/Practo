@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-24T21:43:07 IST" name="Default suite" finished-at="2024-09-24T21:44:32 IST" duration-ms="84741">
+    <groups>
+    </groups>
+    <test started-at="2024-09-24T21:43:07 IST" name="Default test" finished-at="2024-09-24T21:44:32 IST" duration-ms="84741">
+      <class name="Practo.PractoTestng">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Practo.PractoTestng@407a7f2a]" started-at="2024-09-24T21:43:07 IST" name="setupReport" finished-at="2024-09-24T21:43:07 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="verifyListOfAllDoctors()[pri:1, instance:Practo.PractoTestng@407a7f2a]" started-at="2024-09-24T21:43:07 IST" name="verifyListOfAllDoctors" finished-at="2024-09-24T21:43:33 IST" duration-ms="25799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyListOfAllDoctors -->
+        <test-method signature="verifyDoctor_name_date_time()[pri:2, instance:Practo.PractoTestng@407a7f2a]" started-at="2024-09-24T21:43:33 IST" name="verifyDoctor_name_date_time" finished-at="2024-09-24T21:44:07 IST" duration-ms="33583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDoctor_name_date_time -->
+        <test-method signature="filter()[pri:3, instance:Practo.PractoTestng@407a7f2a]" started-at="2024-09-24T21:44:07 IST" name="filter" finished-at="2024-09-24T21:44:32 IST" duration-ms="25271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:Practo.PractoTestng@407a7f2a]" started-at="2024-09-24T21:44:32 IST" name="flushReports" finished-at="2024-09-24T21:44:33 IST" duration-ms="1065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- Practo.PractoTestng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
