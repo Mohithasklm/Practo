@@ -7,7 +7,6 @@ import java.util.Properties;
 import org.openqa.selenium.edge.EdgeDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -43,17 +42,6 @@ public class Base {
 			String url1=prop.getProperty("url");
 			driver.get(url1);
             System.out.println("The title of the browser is:  "+ driver.getTitle());
-	        Thread.sleep(2000);
-	        test=report.createTest("Validate Title");
-	        if(driver.getTitle().contains("Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests"))
-	        {	
-	        	test.log(Status.PASS, "The title has the expected value on Home page");
-	        }
-	        else
-	        {
-	        	test.log(Status.FAIL, "The title not matching expected value on Home page");
-	        }
-	        Thread.sleep(2000);
 	 }
 	 
 

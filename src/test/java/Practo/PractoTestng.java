@@ -1,13 +1,7 @@
 package Practo;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -30,15 +24,15 @@ public class PractoTestng extends Base{
 		h.setUp(); 
 		h.openUrl();
     	h.selectCity();
-    	test=report.createTest("Validate DoctorName,Date AND Time");
+    	test=report.createTest("Validate Doctors specalists ");
     	int res[]=h.selectSpecality();
     	if(res[1]==0) {
     		System.err.println("pass");
-    		test.log(Status.PASS, "DoctorName,Date AND Time are equal");
+    		test.log(Status.PASS, "Doctor specalist type is same as Selected specalist ");
     	}
     	else {
     		System.err.println("Fail");
-    		test.log(Status.FAIL, "DoctorName,Date AND Time are NOT equal");
+    		test.log(Status.FAIL, "Doctor specalist type is NOT same as Selected specalist");
     	}
     	
     	h.close();
@@ -52,7 +46,6 @@ public class PractoTestng extends Base{
     	h.selectCity();
     	h.selectSpecality();
     	d.doctorName_Time();
-    	
     	h.close();
     	
     }
@@ -63,7 +56,7 @@ public class PractoTestng extends Base{
 	h.openUrl();
 	h.selectCity();
 	h.selectSpecality();
-	test=report.createTest("Validate filtered sConsultation Fee");
+	test=report.createTest("Validate filtered Consultation Fee");
 	int []res=d.consultationFee();
 	if(res[1]==0) {
 		System.out.println("pass:  all prices are equal");

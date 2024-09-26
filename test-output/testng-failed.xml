@@ -6,7 +6,7 @@
       <class name="Practo.PractoTestng">
         <methods>
           <include name="setupReport"/>
-          <include name="filter"/>
+          <include name="verifyDoctor_name_date_time"/>
           <include name="flushReports"/>
         </methods>
       </class> <!-- Practo.PractoTestng -->
